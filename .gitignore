@@ -1,2 +1,15 @@
+.venv/
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.DS_Store
+*.jsonl
+.swarmforge/
+.worktrees/
+tests/acceptance/build/
+tests/acceptance/generated/
+tmp/
+/build/
