@@ -1,32 +1,29 @@
 # generic-scraper2
 
-Minimal Swarm Forger project scaffold with Python code.
+A configuration-driven web scraper. Describe a site in a spec file; get
+structured records out. Built by a SwarmForge four-pack running on Claude Code.
 
-## Files
+A quick test to see how SwarmForge works to create a generic scraper. The Sonnet 5 model was used for all of the steps. The feature gerkhin files were created from a very brief voice conversation using SuperWhisper. The first 4 phases in the 6 step process ran in less than 2 hours. The hardener process ran for about 1.5 hours and the QA section ran for about 20 minutes. The process runs many local jobs that do not consume tokens.  
 
-- `swarm_forger.py` - small Python module that describes the project
-- `tests/test_swarm_forger.py` - focused unit tests
+Next I will be going to run a similar test using the four-pack with the same model to compare the differences in the outcomes
 
-## Run tests
+I am quite impressed with the quality of the code that has been generated so far, I have not attempted to use the code yet
 
-```bash
-python -m unittest tests.test_swarm_forger
+## actual text used to create feature gerkhins in copilot using Think Deeper
 ```
+create gerkin scripts to describe a python generic scraper that will be able to use number of different scraping techniques the main class for the Scraper will be able to receive
 
-## Generic Scraper
 
-This repository also contains a Python web-scraping package developed with the SwarmForge four-pack.
-It supports configurable fetch engines and HTML processors, with unit, property, and acceptance
-tests.
+ScraperType class
+initScraper class consists of variables:
+- Scraper type, which can be the defaults
+- Requests
+- Playwright
+- Selenium
+- Browser type
+- Default none
+- Secondary choices
+- Chrome
 
-Create an environment and run the scraper test suite with:
-
-```sh
-python -m venv .venv
-source .venv/bin/activate
-pip install requests beautifulsoup4 lxml PyYAML pytest pytest-bdd ruff mypy
-pytest
+Firefox, then proxy, proxy information, pass key for that header data, create processing type. Values can be like beautiful soup, common requests.
 ```
-
-Behavioral requirements are in `features/`; project setup and acceptance-pipeline details are in
-`docs/`.
